@@ -8,8 +8,8 @@
     "test:verbose": "jest --passWithNoTests --runInBand",
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
     "test:integration": "npm test -- --watch -c jest-integration-config.js",
-    "test:staged":"npm test -- --findRelatedTests",
-    "test:ci":"npm test -- --coverage"
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:ci": "npm test -- --coverage"
   },
   "keywords": [],
   "author": "Luiz Mendes",
@@ -20,6 +20,7 @@
     "@babel/preset-typescript": "^7.15.0",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.1",
+    "@types/validator": "^13.6.3",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "babel-jest": "^27.0.6",
     "eslint": "^7.32.0",
@@ -32,8 +33,11 @@
     "jest": "^27.0.6",
     "lint-staged": "^11.1.2",
     "node": "^16.6.1",
-    "ts": "^0.2.2",
+    "ts": "^0.0.0",
     "ts-jest": "^27.0.5",
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "validator": "^13.6.0"
   }
 }
