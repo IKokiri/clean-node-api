@@ -13,7 +13,7 @@ export class DbAddAccount implements AddAccount {
     const ac: AccountModel = {
       id: '',
       name: '',
-      email: '', 
+      email: '',
       password: ''
     }
     const hashedPassword = await this.encrypter.encrypt(accountData.password)
